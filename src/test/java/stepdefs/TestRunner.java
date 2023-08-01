@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources",
         glue = {"stepdefs"},
         dryRun = false,
-        monochrome = false,
+        monochrome = true,
         plugin = {"pretty","html:target/reports"},
         tags = "@smoke"
 )
