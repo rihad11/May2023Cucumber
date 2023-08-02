@@ -1,12 +1,13 @@
 package pageObjects;
 
-import io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.Serializers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import stepdefs.TestRunner;
 
-public class LoginPage extends BaseTest {
+public class LoginPage extends TestRunner {
+
 
 public LoginPage(WebDriver ldriver){
     driver=ldriver;

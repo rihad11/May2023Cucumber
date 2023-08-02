@@ -7,37 +7,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pageObjects.BaseTest;
 import pageObjects.LoginPage;
 
 import java.time.Duration;
 
-public class LoginSteps extends BaseTest {
+public class LoginSteps extends TestRunner{
 
      LoginPage loginPage;
-
-
-    @Before
-    public void setup(){
-        driver = new ChromeDriver();
-        System.out.println("launching browser");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-    }
-
-    @After
-    public void teardown() throws InterruptedException {
-        if(driver!=null){
-            Thread.sleep(5000);
-            driver.quit();
-            System.out.println("browser quit");
-        }
-    }
-
-
 
     @Given("user in login page")
     public void user_in_login_page() {
