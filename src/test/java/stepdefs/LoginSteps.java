@@ -29,6 +29,7 @@ public class LoginSteps extends TestRunner{
 //        driver.findElement(By.id("pass")).sendKeys("Abc!2345");
           loginPage = new LoginPage(driver);
           loginPage.enterCredentials("rhasan@yahoo.com","Abc!2345");
+        System.out.println("verify github jenkins");
 
 
     }
